@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Astro Twins</string>
+    <string-array name="countries">
+        <item>+91</item>
+        <item>+86</item>
+        <item>+44</item>
+        <item>+01</item>
+    </string-array>
+    <string name="twindesc">
+        Astro twins are two people born on same day,month,year,time and place.
+    </string>
+    <string-array name="places">
+        <item>Trichy</item>
+        <item>Madurai</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello World</string>
+    <string-array name="Astros">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+    <string name="placeholder_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmtech.astrotwins" >
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/astrotwinicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/astrotwinicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AstroTwins" >
+        <activity
+            android:name=".TestActivity"
+            android:exported="false"
+            android:label="@string/title_activity_test"
+            android:theme="@style/Theme.AstroTwins.NoActionBar" />
+        <activity
+            android:name=".UserEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".TwinSearchActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserProfileFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/registerbg"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:background="@drawable/registerboxbg">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruby James"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"/>
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kumbakonam, Tamil Nadu"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <ProgressBar
+                    android:id="@+id/progress_horizontal"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/place"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:max="100"
+                    android:progress="75" />
+                <TextView
+                    android:id="@+id/progress_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="75% Completed"
+                    android:layout_below="@id/progress_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/abouttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progress_level"
+                    android:layout_marginTop="10dp"
+                    android:text="About"/>
+                <TextView
+                    android:id="@+id/abouttext"
+                    android:layout_below="@id/abouttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/placeholder_text"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/emailtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/abouttext"
+                    android:layout_marginTop="20dp"
+                    android:text="Email Address" />
+                <TextView
+                    android:id="@+id/emailtext"
+                    android:layout_below="@id/emailtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ruby.james@gmail.com"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/phonetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailtext"
+                    android:layout_marginTop="20dp"
+                    android:text="Phone" />
+                <TextView
+                    android:id="@+id/phonetext"
+                    android:layout_below="@id/phonetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9873245666"
+                    android:textColor="@color/black"/>
+                <View
+                    android:id="@+id/div1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@id/phonetext"/>
+                <TextView
+                    android:id="@+id/dobtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/div1"
+                    android:text="Date Of Birth"/>
+                <TextView
+                    android:id="@+id/dobtext"
+                    android:layout_below="@id/dobtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="09-8-1999"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/timetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dobtext"
+                    android:layout_marginTop="20dp"
+                    android:text="Time Of Birth" />
+                <TextView
+                    android:id="@+id/timetext"
+                    android:layout_below="@id/timetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9:00 AM"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/placetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timetext"
+                    android:layout_marginTop="20dp"
+                    android:text="Place Of Birth" />
+                <TextView
+                    android:id="@+id/placetext"
+                    android:layout_below="@id/placetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Coimbatore,Tamil Nadu,India"
+                    android:textColor="@color/black"/>
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@id/placetext"/>
+                <TextView
+                    android:id="@+id/astrotitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/div2"
+                    android:text="Time Of Birth" />
+                <TextView
+                    android:id="@+id/astrotext"
+                    android:layout_below="@id/astrotitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9:00 AM"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/sextitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/astrotext"
+                    android:layout_marginTop="20dp"
+                    android:text="My Astro" />
+                <TextView
+                    android:id="@+id/sextext"
+                    android:layout_below="@id/sextitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Capricorn"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pfp"
+                app:shapeAppearanceOverlay="@style/Round" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/edit"
+        android:backgroundTint="@color/EndColor"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

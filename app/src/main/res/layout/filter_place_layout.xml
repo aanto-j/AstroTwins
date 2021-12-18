@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Place"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/exit" />
+    <EditText
+        android:id="@+id/placetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="10dp"
+        android:background="@drawable/text_fields"
+        android:drawableEnd="@drawable/search"
+        android:layout_margin="10dp"/>
+    <ListView
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placetext"
+        android:entries="@array/places"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_centerHorizontal="true"
+        android:text="Filter"
+        android:textColor="@color/white"
+        android:background="@drawable/darkbuttonbg"/>
+
+</RelativeLayout>

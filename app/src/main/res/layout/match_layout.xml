@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/sent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/registerboxbg"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/pfp"
+            app:shapeAppearanceOverlay="@style/Round"
+            app:strokeWidth="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                tools:text="Madhan Veera" />
+
+            <TextView
+                android:id="@+id/bday"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/name"
+                android:layout_margin="5dp"
+                android:drawablePadding="8dp"
+                android:text="01/11/2000"
+                app:drawableStartCompat="@drawable/calendar"
+                app:drawableTint="#ED462F" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/bday"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="8dp"
+                android:text="Kumbakonam,TN,India"
+                app:drawableStartCompat="@drawable/calendar"
+                app:drawableTint="#ED462F" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/bday"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttonbg"
+                android:backgroundTint="#ED462F"
+                android:text="connect"
+                android:textColor="#ED462F"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -50,33 +51,21 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setSelectedItemId(R.id.astrotwinsmenu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            switch(item.getItemId()){
-                case R.id.notifications:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.f1fragment,notif).commit();
-                    return true;
-                case R.id.privacy:
-                    return true;
-                case R.id.terms:
-                    return true;
-                case R.id.faq:
-                    return true;
-                case R.id.sign_out:
-                    return true;
-            }
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     AstroTwinsFragment firstFragment = new AstroTwinsFragment();
     MatchesFragment secondFragment = new MatchesFragment();
     AstrologersFragment thirdFragment = new AstrologersFragment();
     UserProfileFragment fourthFragment = new UserProfileFragment();
     NotificationsFragment notif = new NotificationsFragment();
+    FaqFragment faq = new FaqFragment();
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.notifications:
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -96,7 +85,12 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.userprof:
                 getSupportFragmentManager().beginTransaction().replace(R.id.f1fragment, fourthFragment).commit();
                 return true;
+
+            case R.id.notifications:
+                getSupportFragmentManager().beginTransaction().replace(R.id.f1fragment,notif).commit();
+                return true;
         }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return false;
     }
 }

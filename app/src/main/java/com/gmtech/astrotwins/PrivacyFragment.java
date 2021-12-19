@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class NotificationsFragment extends Fragment {
-    View rootView;
+public class PrivacyFragment extends Fragment {
 
-    public NotificationsFragment() {
+    public PrivacyFragment() {
+        // Required empty public constructor
     }
 
     @Override
@@ -26,9 +26,9 @@ public class NotificationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fragment_notifications, container, false);
-        ImageButton back = rootView.findViewById(R.id.backNotifs);
-
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_privacy, container, false);
+        ImageButton back = rootView.findViewById(R.id.backPriv);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,6 @@ public class NotificationsFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
         return rootView;
     }
 }

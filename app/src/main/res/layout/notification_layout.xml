@@ -25,7 +25,8 @@
             android:layout_margin="10dp"
             android:src="@drawable/pfp"
             app:shapeAppearanceOverlay="@style/RoundedSquare"
-            app:strokeWidth="5dp" />
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"

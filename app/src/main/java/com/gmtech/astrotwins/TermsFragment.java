@@ -10,12 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+public class TermsFragment extends Fragment {
 
-public class NotificationsFragment extends Fragment {
-    View rootView;
-
-    public NotificationsFragment() {
+    public TermsFragment() {
+        // Required empty public constructor
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,8 @@ public class NotificationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fragment_notifications, container, false);
-        ImageButton back = rootView.findViewById(R.id.backNotifs);
-
+        View rootView = inflater.inflate(R.layout.fragment_terms, container, false);
+        ImageButton back = rootView.findViewById(R.id.backTerms);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +35,6 @@ public class NotificationsFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
         return rootView;
     }
 }

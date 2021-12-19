@@ -206,7 +206,9 @@
                 android:layout_height="110dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/pfp"
-                app:shapeAppearanceOverlay="@style/Round" />
+                app:shapeAppearanceOverlay="@style/Round"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/white"/>
 
         </RelativeLayout>
     </ScrollView>
